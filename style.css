@@ -11,6 +11,38 @@ body {
   /* background-blend-mode: overlay; */
 }
 
+.terminal-box {
+  background-color: #012456;
+  /* dark blue, like PowerShell */
+  color: #00ff00;
+  /* bright green-ish text for that terminal vibe */
+  font-family: 'Consolas', 'Courier New', monospace;
+  padding: 1.5rem;
+  border: 2px solid #008080;
+  /* teal-ish border for style */
+  border-radius: 8px;
+  box-shadow: 0 0 10px #008080;
+  margin: 1rem 0;
+  white-space: pre-wrap;
+  /* keeps formatting */
+}
+
+/* Optional: add a header to mimic terminal title bar */
+.terminal-box::before {
+  content: "PowerShell Terminal";
+  display: block;
+  background-color: #004080;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.25rem 0.75rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin: -1.5rem -2px 1rem -2px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+
 
 /* PowerShell-style font */
 header h1 {
