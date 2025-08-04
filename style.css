@@ -1,13 +1,14 @@
 body {
   background-image: url('assets/roof-station-3-D.jpg');
-  /* replace with your actual filename */
   background-repeat: no-repeat;
   background-size: cover;
-  /* make it cover whole viewport */
+  /* covers entire viewport */
   background-position: center;
-  /* center the image */
   background-attachment: fixed;
-  /* optional: fix it when scrolling */
+  /* stays fixed on scroll */
+  /* Optional: add a subtle overlay if needed */
+  /* background-color: rgba(0,0,0,0.5); */
+  /* background-blend-mode: overlay; */
 }
 
 
