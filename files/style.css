@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #222;
+}
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+}
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+.projects {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.project {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 280px;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
