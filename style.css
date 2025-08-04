@@ -1,41 +1,105 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fafafa;
-  color: #222;
-}
-header {
-  background: #222;
+/* PowerShell-style font */
+header h1 {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 2.5rem;
   color: #fff;
+  background-color: #012456;
   padding: 1rem;
 }
-nav a {
-  color: #fff;
+
+/* Navigation bar links inside header */
+header nav a {
+  color: #ccc;
+  text-decoration: none;
   margin: 0 1rem;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Diagonal split container */
+.hero-split {
+  display: flex;
+  height: 500px;
+  background: linear-gradient(135deg, #222 50%, #000 50%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left side with nav info */
+.hero-left {
+  flex: 1;
+  padding: 3rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-left h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hero-left li {
+  margin: 1rem 0;
+}
+
+.hero-left a {
+  color: #ddd;
+  font-size: 1.2rem;
   text-decoration: none;
 }
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-.projects {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.project {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  width: 280px;
-}
-footer {
-  background: #222;
+
+.hero-left a:hover {
+  text-decoration: underline;
   color: #fff;
-  text-align: center;
-  padding: 1rem;
+}
+
+/* Right side with image carousel */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.hero-right img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+
+/* Optional: Diagonal masking using pseudo-elements */
+.hero-split::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background: inherit;
+  transform: skewY(-5deg);
+  transform-origin: top left;
+  z-index: 1;
+}
+
+/* Push rest of content below hero */
+#about,
+#portfolio,
+#blog {
   margin-top: 2rem;
+  padding: 2rem;
 }

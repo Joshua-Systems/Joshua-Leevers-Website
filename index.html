@@ -18,6 +18,21 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+  <section class="hero-split">
+    <div class="hero-left">
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Project Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hero-right">
+      <img id="carousel-img" src="assets/project1.png" alt="Slideshow image">
+    </div>
+  </section>
+
   <section id="about">
     <h2>About</h2>
     <p>Welcome! This is my page to compile and document my successes and general progress with projects.</p>
@@ -46,6 +61,25 @@
     <p>&copy; Joshua Leevers</p>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // Carousel functionality
+    const images = [
+      'assets/project1.png',
+      'assets/project2.png',
+      'assets/project3.png'
+    ];
+
+    let current = 0;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const imgEl = document.getElementById('carousel-img');
+
+      setInterval(() => {
+        current = (current + 1) % images.length;
+        imgEl.src = images[current];
+      }, 3000);
+    });
+  </script>
 </body>
 
 </html>
