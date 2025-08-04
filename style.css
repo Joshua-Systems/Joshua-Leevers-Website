@@ -13,6 +13,41 @@ body {
 
 .terminal-box {
   background-color: #012456;
+  color: #00FF00;
+  font-family: 'Consolas', 'Courier New', monospace;
+  padding: 1.5rem;
+  border: 2px solid #00FF00;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00FF00AA;
+  position: relative;
+  margin: 1rem;
+  line-height: 1.5;
+}
+
+.terminal-header {
+  background-color: #000080;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+  border-bottom: 2px solid #00FF00;
+}
+
+/* Style links like terminal commands */
+.terminal-box a {
+  color: #00FF00;
+  text-decoration: none;
+}
+
+.terminal-box a:hover {
+  text-decoration: underline;
+}
+
+.terminal-box {
+  background-color: #012456;
   /* dark blue, like PowerShell */
   color: #00ff00;
   /* bright green-ish text for that terminal vibe */
