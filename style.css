@@ -65,25 +65,42 @@ header nav a:hover {
 }
 
 /* Right side with image carousel */
+
+
 .hero-right {
   flex: 1;
+  position: relative;
+  /* needed for absolute positioning inside */
+  overflow: hidden;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  z-index: 2;
 }
 
+/* We'll stack images absolutely */
 .hero-right img {
+  position: absolute;
   max-width: 90%;
   max-height: 90%;
   border: 5px solid #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px #000;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* Optional: Diagonal masking using pseudo-elements */
-.hero-split::before {
+/* Show the active image */
+.hero-right img.active {
+  opacity: 1;
+  z-index: 3;
+}
+
+/* Add a diagonal overlay on top */
+.hero-right::before {
   content: "";
   position: absolute;
   top: 0;
@@ -93,7 +110,10 @@ header nav a:hover {
   background: inherit;
   transform: skewY(-5deg);
   transform-origin: top left;
-  z-index: 1;
+  pointer-events: none;
+  /* so clicks pass through */
+  z-index: 4;
+  /* above images */
 }
 
 /* Push rest of content below hero */

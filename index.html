@@ -29,8 +29,11 @@
       </ul>
     </div>
     <div class="hero-right">
-      <img id="carousel-img" src="assets/project1.png" alt="Slideshow image">
+      <img src="assets/ESP32-LoRa-Driver.jpg" alt="Slideshow image 1" class="active" />
+      <img src="assets/Proteus-Matrix-Clip.jpg" alt="Slideshow image 2" />
+      <img src="assets/roof-station.jpg" alt="Slideshow image 3" />
     </div>
+
   </section>
 
   <section id="about">
@@ -62,21 +65,14 @@
   </footer>
   <script src="script.js"></script>
   <script>
-    // Carousel functionality
-    const images = [
-      'assets/ESP32-LoRa-Driver.jpgg',
-      'assets/Proteus-Matrix-Clip.jpg',
-      'assets/roof-station.jpg'
-    ];
-
-    let current = 0;
-
     window.addEventListener('DOMContentLoaded', () => {
-      const imgEl = document.getElementById('carousel-img');
+      const images = document.querySelectorAll('.hero-right img');
+      let current = 0;
 
       setInterval(() => {
+        images[current].classList.remove('active');
         current = (current + 1) % images.length;
-        imgEl.src = images[current];
+        images[current].classList.add('active');
       }, 3000);
     });
   </script>
