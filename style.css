@@ -169,6 +169,32 @@ body {
   text-decoration: underline;
 }
 
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
 
 .btn-cta {
   display: inline-block;

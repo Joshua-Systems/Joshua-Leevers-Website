@@ -59,19 +59,41 @@ PS C:\Users\Joshua> Explore site content:
   <section id="portfolio">
     <div class="terminal-box">
       <h2>Project Portfolio</h2>
-      <p>Here are some of my recent projects:</p>
-      <div class="spacer-md"></div>
-      <div class="project">
-        <h3>ESP32 LoRa Driver</h3>
-        <div class="spacer-md"></div>
-        <p>Developed a driver for ESP32 LoRa communication.</p>
-        <div class="spacer-md"></div>
-        <p>Technologies: C++, LoRa, Cmake</p>
-        <div class="spacer-md"></div>
-        <img src="assets/ESP32-LoRa-Driver.jpg" alt="ESP32 LoRa Driver" />
-      </div>
-      <!-- Add more projects as needed -->
-    </div>
+      <div class="carousel" id="project-carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <h3>ESP32 LoRa Driver</h3>
+            <p>Developed a driver for ESP32 LoRa communication.</p>
+            <p>Implemented schemes for transmission over LoRa protocol.</p>
+            <img src="assets/ESP32-LoRa-Driver.jpg" alt="ESP32 LoRa Driver" />
+          </div>
+          <!-- Add more slides here -->
+          <div class="carousel-slide">
+            <h3>SDR (HackRF/RTL-SDR) Tx/Rx Graphs in GNU radio</h3>
+            <p>Developed and tested GNU Radio Graphs for the duplex telemetry of the ground station.</p>
+            <p>This development had succeeded and we were able to send test messages round loop.</p>
+            <p>The system still needs optimisation the working product is currently being</p>
+            <p>tested on a duplex set of Raspberry Pi's</p>
+            <img src="assets/GNU-Radio.jpg" alt="tx/rx" />
+          </div>
+          <!-- etc. -->
+          <div class="carousel-slide">
+            <h3>Endurostack Network Stack</h3>
+            <p>Currently developing a recreation of the Endurosat Network Stack in Python</p>
+            <p>Currently I've developed the TP network layer and aided in developing the Datalink layer.</p>
+            <img src="TP-Stack.jpg" alt="TP clip" />
+          </div>
+          <div class="carousel-slide">
+            <h3>RCA -> Balanced Stereo Audio Mixer PCB</h3>
+            <p>Designed, ordered, and soldered together a PCB which performs impedance matching</p>
+            <p>and balancing of signal voltages. This design improved audio quality and was tested</p>
+            <p>on an RCA connection speaker and is being used in the field currently by an audio company in West
+              Auckland.</p>
+            <p>that I designed it for.</p>
+            <img src="assets/Proteus-Matrix-Clip.jpg" alt="Proteus Matrix Clip" />
+          </div>
+        </div>
+  </section>
   </section>
 
   <section id="blog">
@@ -109,6 +131,22 @@ PS C:\Users\Joshua> Explore site content:
       } else {
         header.classList.remove('shrink');
       }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const track = document.querySelector('#project-carousel .carousel-track');
+      const slides = Array.from(track.children);
+      let current = 0;
+
+      function moveToSlide(index) {
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      setInterval(() => {
+        current = (current + 1) % slides.length;
+        moveToSlide(current);
+      }, 4000); // change slide every 4 seconds
     });
   </script>
 
