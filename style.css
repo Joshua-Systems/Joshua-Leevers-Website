@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url('assets/background.jpg');
   background-repeat: no-repeat;
@@ -59,6 +65,27 @@ body {
   margin: 1rem;
   line-height: 1.2;
   /* Reduce this to tighten spacing */
+}
+
+.terminal-box p,
+.terminal-box li,
+.terminal-box pre,
+.terminal-box code {
+  font-size: 0.9rem;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+
+.terminal-box ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  /* keeps bullets aligned */
+}
+
+.terminal-box li+li {
+  margin-top: 0.25rem;
+  /* slight spacing between list items */
 }
 
 .terminal-box pre {
