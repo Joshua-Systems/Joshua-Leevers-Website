@@ -39,7 +39,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 12px #00FF00AA;
   margin: 1rem 0;
-  white-space: pre-wrap;
+  white-space: normal;
   position: relative;
   line-height: 1.2;
   /* base line height */
