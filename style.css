@@ -119,6 +119,22 @@ body {
   letter-spacing: 1px;
 }
 
+.btn-cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #00FF00;
+  color: #012456;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #aaffaa;
+  color: #001d4d;
+}
 
 
 /* PowerShell-style font */
