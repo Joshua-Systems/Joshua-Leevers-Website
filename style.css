@@ -66,6 +66,24 @@ body {
   line-height: 1.1;
 }
 
+.terminal-box pre,
+.terminal-box code {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #011840;
+  /* optional: makes code stand out */
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.terminal-box ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
 .terminal-header {
   background-color: #000080;
   padding: 0.5rem 1rem;
@@ -94,7 +112,7 @@ body {
   color: #00ff00;
   /* bright green-ish text for that terminal vibe */
   font-family: 'Consolas', 'Courier New', monospace;
-  padding: 1.5rem;
+  padding: 1rem;
   border: 2px solid #008080;
   /* teal-ish border for style */
   border-radius: 8px;
