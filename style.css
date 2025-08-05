@@ -29,6 +29,19 @@ body {
   }
 }
 
+/* ========== SPACER CLASSES ========== */
+.spacer-sm {
+  margin-top: 0.5rem;
+}
+
+.spacer-md {
+  margin-top: 1rem;
+}
+
+.spacer-lg {
+  margin-top: 2rem;
+}
+
 /* ========== TERMINAL BOX STYLING ========== */
 .terminal-box {
   background-color: #012456;
