@@ -3,62 +3,62 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joshua Leevers</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="hero-left terminal-box">
-    <div class="terminal-header">Windows PowerShell</div>
 
-    <div class="terminal-tabs">
-      <a href="#about">About Me</a>
-      <a href="#portfolio">Project Portfolio</a>
-      <a href="#blog">Blog</a>
-      <a href="contact.html">Contact</a>
+  <section class="hero-split">
+    <div class="hero-left terminal-box">
+      <div class="terminal-header">Windows PowerShell</div>
+      <div class="terminal-tabs">
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Project Portfolio</a>
+        <a href="#blog">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <pre>
+PS C:\Users\Joshua> Explore site content:
+  - About Me        [#about]
+  - Project Portfolio [#portfolio]
+  - Blog            [#blog]
+  - Contact         [contact.html]
+</pre>
     </div>
 
-    <pre>
-PS C:\Users\Joshua> Explore site content:
-  - <a href="#about">About Me</a>
-  - <a href="#portfolio">Project Portfolio</a>
-  - <a href="#blog">Blog</a>
-  - <a href="contact.html">Contact</a>
-  </pre>
-  </div>
-  <div class="hero-right">
-    <img src="assets/ESP32-LoRa-Driver.jpg" alt="Slideshow image 1" class="active" />
-    <img src="assets/Proteus-Matrix-Clip.jpg" alt="Slideshow image 2" />
-    <img src="assets/roof-station.jpg" alt="Slideshow image 3" />
-  </div>
-
+    <div class="hero-right">
+      <img src="assets/ESP32-LoRa-Driver.jpg" alt="Slideshow image 1" class="active" />
+      <img src="assets/Proteus-Matrix-Clip.jpg" alt="Slideshow image 2" />
+      <img src="assets/roof-station.jpg" alt="Slideshow image 3" />
+    </div>
   </section>
-  <div class="terminal-box">
+
+  <div class="terminal-box" id="about">
     <h2>Terminal</h2>
     <p>Welcome to my website! This is where I will report my progress and document projects.</p>
     <p>I am an Electronics Engineer with a deep interest in radio communications and communications software.</p>
-    <p>In pursuit of this interest I've gained valuble work experience in the following:</p>
+    <p>In pursuit of this interest I've gained valuable work experience in the following:</p>
     <ul>
-      <li>Software Development (Development of newtwork stacks and communication protocol)</li>
+      <li>Software Development (Development of network stacks and communication protocols)</li>
       <li>Embedded Systems Programming (C/C++ firmware and Python network control)</li>
       <li>SDR development in GNU radio</li>
       <li>Radio Communications (FSK, ASK, QPSK, GFSK, LoRa)</li>
       <li>PCB Design</li>
-      <li>Project Management</li>`
+      <li>Project Management</li>
       <li>Web development</li>
     </ul>
-    <pre>
-      <code>
-      $ ls -l
-      total 3
-      drwxr-xr-x 2 user group 4096 Oct 1 12:00 projects
-      drwxr-xr-x 2 user group 4096 Oct 1 12:00 blog
-      drwxr-xr-x 2 user group 4096 Oct 1 12:00 contact
-      </code>
-    </pre>
+    <pre><code>
+$ ls -l
+total 3
+drwxr-xr-x 2 user group 4096 Oct 1 12:00 projects
+drwxr-xr-x 2 user group 4096 Oct 1 12:00 blog
+drwxr-xr-x 2 user group 4096 Oct 1 12:00 contact
+    </code></pre>
     <p>Feel free to explore the links above to learn more about me and my work.</p>
   </div>
+
   <section id="portfolio">
     <div class="terminal-box">
       <h2>Project Portfolio</h2>
@@ -68,13 +68,12 @@ PS C:\Users\Joshua> Explore site content:
         <p>Developed a driver for ESP32 LoRa communication.</p>
         <img src="assets/ESP32-LoRa-Driver.jpg" alt="ESP32 LoRa Driver" />
       </div>
-      <!-- Example project -->
       <!-- Add more projects as needed -->
     </div>
   </section>
+
   <section id="blog">
     <div class="terminal-box">
-      <p>Check out my latest blog posts:</p>
       <h2>Blog & Updates</h2>
       <ul>
         <li><a href="blog/post1.html">First blog post</a></li>
@@ -82,9 +81,11 @@ PS C:\Users\Joshua> Explore site content:
       </ul>
     </div>
   </section>
+
   <footer>
     <p>&copy; Joshua Leevers</p>
   </footer>
+
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const images = document.querySelectorAll('.hero-right img');
@@ -97,6 +98,7 @@ PS C:\Users\Joshua> Explore site content:
       }, 3000);
     });
   </script>
+
 </body>
 
 </html>
