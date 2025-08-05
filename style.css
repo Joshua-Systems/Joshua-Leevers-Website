@@ -11,6 +11,17 @@ body {
   /* background-blend-mode: overlay; */
 }
 
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .terminal-box {
   background-color: #012456;
   color: #00FF00;
