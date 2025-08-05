@@ -11,6 +11,7 @@ body {
   /* background-blend-mode: overlay; */
 }
 
+
 .cursor {
   display: inline-block;
   animation: blink 1s step-end infinite;
@@ -20,6 +21,30 @@ body {
   50% {
     opacity: 0;
   }
+}
+
+.terminal-tabs {
+  background-color: #001d4d;
+  /* deep blue */
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #00FF00;
+  border-radius: 6px 6px 0 0;
+}
+
+.terminal-tabs a {
+  color: #00FF00;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.terminal-tabs a:hover {
+  text-decoration: underline;
+  color: #aaffaa;
 }
 
 .terminal-box {
@@ -32,7 +57,13 @@ body {
   box-shadow: 0 0 15px #00FF00AA;
   position: relative;
   margin: 1rem;
-  line-height: 1.5;
+  line-height: 1.2;
+  /* Reduce this to tighten spacing */
+}
+
+.terminal-box pre {
+  margin: 0;
+  line-height: 1.1;
 }
 
 .terminal-header {
