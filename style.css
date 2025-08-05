@@ -29,127 +29,55 @@ body {
   }
 }
 
-.terminal-tabs {
-  background-color: #001d4d;
-  /* deep blue */
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #00FF00;
-  border-radius: 6px 6px 0 0;
-}
-
-.terminal-tabs a {
-  color: #00FF00;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Consolas', 'Courier New', monospace;
-}
-
-.terminal-tabs a:hover {
-  text-decoration: underline;
-  color: #aaffaa;
-}
-
+/* ========== TERMINAL BOX STYLING ========== */
 .terminal-box {
   background-color: #012456;
   color: #00FF00;
   font-family: 'Consolas', 'Courier New', monospace;
-  padding: 1.5rem;
+  padding: 1rem;
   border: 2px solid #00FF00;
   border-radius: 8px;
-  box-shadow: 0 0 15px #00FF00AA;
+  box-shadow: 0 0 12px #00FF00AA;
+  margin: 1rem 0;
+  white-space: pre-wrap;
   position: relative;
-  margin: 1rem;
   line-height: 1.2;
-  /* Reduce this to tighten spacing */
+  /* base line height */
 }
 
+/* Reduce spacing between lines and paragraphs */
 .terminal-box p,
-.terminal-box li,
-.terminal-box pre,
-.terminal-box code {
+.terminal-box li {
   font-size: 0.9rem;
-  line-height: 1.1;
+  line-height: 1.3;
   margin: 0;
   padding: 0;
 }
 
+/* Tighter list layout */
 .terminal-box ul {
-  margin: 0;
+  list-style: disc inside;
   padding-left: 1.2rem;
-  /* keeps bullets aligned */
+  margin: 0;
 }
 
 .terminal-box li+li {
   margin-top: 0.25rem;
-  /* slight spacing between list items */
 }
 
-.terminal-box pre {
-  margin: 0;
-  line-height: 1.1;
-}
-
+/* Code + pre formatting */
 .terminal-box pre,
 .terminal-box code {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.2;
   margin: 0;
   padding: 0.5rem;
   background-color: #011840;
-  /* optional: makes code stand out */
   border-radius: 4px;
   overflow-x: auto;
 }
 
-.terminal-box ul {
-  list-style: disc inside;
-  padding-left: 1rem;
-  margin-top: 0.5rem;
-}
-
-.terminal-header {
-  background-color: #000080;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  color: #ffffff;
-  font-family: 'Segoe UI', sans-serif;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  margin: -1.5rem -1.5rem 1rem -1.5rem;
-  border-bottom: 2px solid #00FF00;
-}
-
-/* Style links like terminal commands */
-.terminal-box a {
-  color: #00FF00;
-  text-decoration: none;
-}
-
-.terminal-box a:hover {
-  text-decoration: underline;
-}
-
-.terminal-box {
-  background-color: #012456;
-  /* dark blue, like PowerShell */
-  color: #00ff00;
-  /* bright green-ish text for that terminal vibe */
-  font-family: 'Consolas', 'Courier New', monospace;
-  padding: 1rem;
-  border: 2px solid #008080;
-  /* teal-ish border for style */
-  border-radius: 8px;
-  box-shadow: 0 0 10px #008080;
-  margin: 1rem 0;
-  white-space: pre-wrap;
-  /* keeps formatting */
-}
-
-/* Optional: add a header to mimic terminal title bar */
+/* Terminal label at top */
 .terminal-box::before {
   content: "PowerShell Terminal";
   display: block;
@@ -159,10 +87,21 @@ body {
   padding: 0.25rem 0.75rem;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  margin: -1.5rem -2px 1rem -2px;
+  margin: -1rem -2px 1rem -2px;
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
+
+/* Terminal-style links */
+.terminal-box a {
+  color: #00FF00;
+  text-decoration: none;
+}
+
+.terminal-box a:hover {
+  text-decoration: underline;
+}
+
 
 .btn-cta {
   display: inline-block;
