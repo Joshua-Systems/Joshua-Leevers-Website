@@ -5,43 +5,47 @@
 }
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: rgba(1, 36, 86, 0.95);
-  /* dark blue with transparency */
+  /* dark blue with slight transparency */
   color: white;
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1.5rem;
+  /* reduced padding */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   border-bottom: 2px solid #00FF00;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  /* fixed smaller height */
+  font-size: 0.9rem;
+  /* slightly smaller text */
 }
 
 header h1 {
+  font-size: 1.2rem;
   margin: 0;
-  font-size: 2rem;
-  font-family: 'Consolas', 'Courier New', monospace;
-}
-
-header nav {
-  margin-top: 0.5rem;
+  font-weight: bold;
 }
 
 header nav a {
-  color: #aaffaa;
-  margin-right: 1.5rem;
+  margin-left: 1rem;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-  font-family: 'Consolas', 'Courier New', monospace;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 header nav a:hover {
   text-decoration: underline;
-  color: #ffffff;
 }
 
 body {
+  padding-top: 50px;
   background-image: url('assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
