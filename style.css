@@ -4,6 +4,43 @@
   box-sizing: border-box;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(1, 36, 86, 0.95);
+  /* dark blue with transparency */
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid #00FF00;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+header nav {
+  margin-top: 0.5rem;
+}
+
+header nav a {
+  color: #aaffaa;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
 body {
   background-image: url('assets/background.jpg');
   background-repeat: no-repeat;
