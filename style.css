@@ -5,31 +5,29 @@
 }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   background-color: rgba(1, 36, 86, 0.95);
-  /* dark blue with slight transparency */
   color: white;
-  padding: 0.5rem 1.5rem;
-  /* reduced padding */
+  padding: 1rem 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   border-bottom: 2px solid #00FF00;
   z-index: 1000;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
-  /* fixed smaller height */
-  font-size: 0.9rem;
-  /* slightly smaller text */
+
+  transition: all 0.3s ease;
 }
 
 header h1 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0;
   font-weight: bold;
+  transition: font-size 0.3s ease;
 }
 
 header nav a {
@@ -37,15 +35,30 @@ header nav a {
   color: white;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  transition: font-size 0.3s ease;
 }
 
 header nav a:hover {
   text-decoration: underline;
 }
 
+/* Smaller header styles on scroll */
+header.shrink {
+  padding: 0.5rem 1.5rem;
+  border-bottom-color: #00cc00;
+}
+
+header.shrink h1 {
+  font-size: 1rem;
+}
+
+header.shrink nav a {
+  font-size: 0.8rem;
+}
+
 body {
-  padding-top: 50px;
+  padding-top: 70px;
   background-image: url('assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
