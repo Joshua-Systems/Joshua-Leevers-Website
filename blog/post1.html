@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Opening Blog Post</title>
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
   <header>
     <h1>Joshua Leevers</h1>
@@ -15,13 +17,35 @@
     </nav>
   </header>
   <main>
-    <h2>This is my first blog!</h2>
-    <p>Date: 2025-08-04</p>
-    <p>This is my first update! It's coming at you from the start of this websites development.</p>
-    <p>I'm hoping that this won't fall apart. But hey it's open web development! Who knows what's gonna happen.</p>
+    <div class="terminal-box">
+      <h2>This is my first blog!</h2>
+      <p>Date: 2025-08-04</p>
+      <p>This is my first update! It's coming at you from the start of this websites development.</p>
+      <p>I'm hoping that this won't fall apart. But hey it's open web development! Who knows what's gonna happen.</p>
+      <p>I'm hoping to document my progress and projects here, so stay tuned for more updates!</p>
+    </div>
+    <div class="terminal-box">
+      <h2>Terminal</h2>
+      <pre>
+PS C:\Users\Joshua\blog> ls -l
+total 1
+-rw-r--r-- 1 user group 1024 Aug 4 12:00 post1.html
+      </pre>
+    </div>
+    <div class="terminal-box">
+      <h2>Comments</h2>
+      <p>Feel free to leave a comment below!</p>
+      <form action="#" method="post">
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your comment here..."></textarea>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </main>
   <footer>
     <p>&copy; 2025 Joshua Leevers</p>
   </footer>
 </body>
+
 </html>
