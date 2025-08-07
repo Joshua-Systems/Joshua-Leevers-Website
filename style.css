@@ -109,7 +109,23 @@ body {
   white-space: normal;
   position: relative;
   line-height: 1.2;
+  max-width: 800px;
+  /* or whatever width you want */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  /* prevents image overflow */
   /* base line height */
+}
+
+.terminal-image {
+  width: 100%;
+  /* Image fills container */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-top: 1rem;
+  /* Optional spacing */
+  border-radius: 6px;
+  display: block;
 }
 
 /* Reduce spacing between lines and paragraphs */
