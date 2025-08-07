@@ -109,7 +109,7 @@ body {
   white-space: normal;
   position: relative;
   line-height: 1.2;
-  max-width: 800px;
+  max-width: 1600px;
   /* or whatever width you want */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -183,6 +183,36 @@ body {
 
 .terminal-box a:hover {
   text-decoration: underline;
+}
+
+/* Base header styles */
+#site-header {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Make the header shrink when scrolling */
+#site-header.shrink {
+  padding: 0.5rem 1rem;
+}
+
+#site-header .terminal-header h1 {
+  font-size: 2rem;
+  transition: font-size 0.3s ease;
+}
+
+#site-header.shrink .terminal-header h1 {
+  font-size: 1.2rem;
+}
+
+#site-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .carousel {
