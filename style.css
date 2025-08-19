@@ -4,64 +4,41 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: #007BFF;
-  /* A nice blue background for full width */
-  color: white;
-  /* Make text white for contrast */
-  padding: 1rem 2rem;
-  /* Padding top-bottom 1rem, left-right 2rem */
-  width: 100%;
-  box-sizing: border-box;
-  /* Make padding included in width */
+/* Base site header */
+#site-header {
   position: fixed;
-  /* Optional: fixed header on top */
   top: 0;
   left: 0;
-  z-index: 1000;
-  transition: all 0.3s ease;
-  /* Smooth transitions for shrinking */
+  width: 100%;
+  height: 80px;
+  background-color: #007BFF;
   display: flex;
-  /* Flexbox for alignment */
   align-items: center;
-  /* Vertically center content */
   justify-content: space-between;
-  /* Space between left and right content if needed */
-}
-
-header h1 {
-  font-size: 1.5rem;
-  margin: 0;
-  font-weight: bold;
-  transition: font-size 0.3s ease;
-}
-
-header nav a {
-  margin-left: 1rem;
+  padding: 0 20px;
+  box-sizing: border-box;
   color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
+  z-index: 1000;
+  transition: height 0.3s ease, padding 0.3s ease, background-color 0.3s ease;
+}
+
+#site-header .terminal-header h1 {
+  font-size: 2rem;
+  margin: 0;
   transition: font-size 0.3s ease;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+/* Shrink effect */
+#site-header.shrink {
+  height: 50px;
+  background-color: #0056b3;
+  /* darker blue */
 }
 
-/* Smaller header styles on scroll */
-header.shrink {
-  padding: 0.5rem 1.5rem;
-  border-bottom-color: #00cc00;
+#site-header.shrink .terminal-header h1 {
+  font-size: 1.2rem;
 }
 
-header.shrink h1 {
-  font-size: 1rem;
-}
-
-header.shrink nav a {
-  font-size: 0.8rem;
-}
 
 body {
   padding-top: 70px;
