@@ -18,42 +18,57 @@
   </header>
   <main>
     <div class="terminal-box">
-      <h2>Electronic Partners</h2>
-      <p>Date: May 2025-Present </p>
-    </div>
-    <div class="terminal-box">
-      <h2>Terminal</h2>
-      <pre>
-PS C:\Users\Joshua\Work\EPartners> ls -l
-total 2 
--rw-r--r-- 1 user group 2048 May 1 10:00 project1.html
--rw-r--r-- 1 user group 1024 May 2 11: 00 project2.html
-PS C:\Users\Joshua\Work\EPartners> git status
+      <h2>Rocketry Club Ground Systems Lead/Avionics dev</h2>
+      <p>Date: june 2025-Present </p>
+      <div class="spacer-md"></div>
+      <p>Working in assembly in a hands on practical environment. This job involves a lot of</p>
+      <p>hands on work with the hardware and software integration for products produced by Electronic partners.</p>
+      <div class="spacer-md"></div>
+      <p>Electronic Partners are a small Electronic design and testing firm based in Takapuna that I work at inbetween
+        breaks</p>
+      <p>from university whenever there is need of an extra hand to help with a project</p>
+      <div class="spacer-md"></div>
+      <p>The scale and quality of these projects are at a commercial level, and this role has given me a deep insight
+      </p>
+      <p>into the electronics industry and the processes involved in bringing a product from concept to production.</p>
+      <div class="spacer-md"></div>
+
+      <div class="terminal-box">
+        <h2>Terminal</h2>
+        <pre>
+PS C:\Users\Joshua\Work\Rocketry-Club> ls -l
+total 2
+-rw-r--r-- 1 user group 2048 Jun 1 10:
+project1.html
+-rw-r--r-- 1 user group 1024 Jun 2 11:
+project2.html
+PS C:\Users\Joshua\Work\Rocketry-Club> git status
 On branch main
 Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
-PS C:\Users\Joshua\Work\EPartners> git log --oneline
+PS C:\Users\Joshua\Work\Rocketry-Club> git log --oneline
 a1b2c3d Initial commit
 e4f5g6h Added project1.html
 i7j8k9l Updated project2.html
-PS C:\Users\Joshua\Work\EPartners> git push origin main
+PS C:\Users\Joshua\Work\Rocketry-Club> git push origin main
 Counting objects: 3, done.
 Delta compression using up to 4 threads
 Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 1.23 KiB | 123.00 KiB/s, done.
+Writing objects: 100% (3/3), 1.23 KiB |
+123.00 KiB/s, done. 
 Total 3 (delta 1), reused 0 (delta 0)
       </pre>
-    </div>
-    <div class="terminal-box">
-      <h2>Comments</h2>
-      <p>Feel free to leave a comment below!</p>
-      <form action="#" method="post">
-        <label for="comment">Comment:</label>
-        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your comment here..."></textarea>
-        <br>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      </div>
+      <div class="terminal-box">
+        <h2>Comments</h2>
+        <p>Feel free to leave a comment below!</p>
+        <form action="#" method="post">
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your comment here..."></textarea>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
   </main>
   <footer>
     <p>&copy; 2025 Joshua Leevers</p>
